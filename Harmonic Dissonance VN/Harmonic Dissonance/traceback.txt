@@ -1,0 +1,49 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 97, in script
+Exception: Open text tag at end of string u"Well, I guess a circus with {b}synth-tech{/b] users wouldn't be all too normal anyway.".
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "C:\Users\Pentao\Desktop\Program Work\Harmonic Dissonance VN\renpy-6.16.5-sdk\renpy\execution.py", line 288, in run
+    node.execute()
+  File "C:\Users\Pentao\Desktop\Program Work\Harmonic Dissonance VN\renpy-6.16.5-sdk\renpy\ast.py", line 455, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "C:\Users\Pentao\Desktop\Program Work\Harmonic Dissonance VN\renpy-6.16.5-sdk\renpy\exports.py", line 853, in say
+    who(what, interact=interact)
+  File "C:\Users\Pentao\Desktop\Program Work\Harmonic Dissonance VN\renpy-6.16.5-sdk\renpy\character.py", line 807, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Users\Pentao\Desktop\Program Work\Harmonic Dissonance VN\renpy-6.16.5-sdk\renpy\character.py", line 673, in do_display
+    **display_args)
+  File "C:\Users\Pentao\Desktop\Program Work\Harmonic Dissonance VN\renpy-6.16.5-sdk\renpy\character.py", line 452, in display_say
+    what_text = show_function(who, what_string)
+  File "C:\Users\Pentao\Desktop\Program Work\Harmonic Dissonance VN\renpy-6.16.5-sdk\renpy\character.py", line 657, in do_show
+    **self.show_args)
+  File "C:\Users\Pentao\Desktop\Program Work\Harmonic Dissonance VN\renpy-6.16.5-sdk\renpy\character.py", line 263, in show_display_say
+    return renpy.display.screen.get_widget(screen, "what")
+  File "C:\Users\Pentao\Desktop\Program Work\Harmonic Dissonance VN\renpy-6.16.5-sdk\renpy\display\screen.py", line 620, in get_widget
+    screen.update()
+  File "C:\Users\Pentao\Desktop\Program Work\Harmonic Dissonance VN\renpy-6.16.5-sdk\renpy\display\screen.py", line 274, in update
+    self.child.visit_all(lambda c : c.per_interact())
+  File "C:\Users\Pentao\Desktop\Program Work\Harmonic Dissonance VN\renpy-6.16.5-sdk\renpy\display\core.py", line 246, in visit_all
+    d.visit_all(callback)
+  File "C:\Users\Pentao\Desktop\Program Work\Harmonic Dissonance VN\renpy-6.16.5-sdk\renpy\display\core.py", line 246, in visit_all
+    d.visit_all(callback)
+  File "C:\Users\Pentao\Desktop\Program Work\Harmonic Dissonance VN\renpy-6.16.5-sdk\renpy\display\core.py", line 246, in visit_all
+    d.visit_all(callback)
+  File "C:\Users\Pentao\Desktop\Program Work\Harmonic Dissonance VN\renpy-6.16.5-sdk\renpy\display\core.py", line 243, in visit_all
+    for d in self.visit():
+  File "C:\Users\Pentao\Desktop\Program Work\Harmonic Dissonance VN\renpy-6.16.5-sdk\renpy\text\text.py", line 1267, in visit
+    self.update()
+  File "C:\Users\Pentao\Desktop\Program Work\Harmonic Dissonance VN\renpy-6.16.5-sdk\renpy\text\text.py", line 1253, in update
+    tokens = self.tokenize(text)
+  File "C:\Users\Pentao\Desktop\Program Work\Harmonic Dissonance VN\renpy-6.16.5-sdk\renpy\text\text.py", line 1517, in tokenize
+    tokens.extend(textsupport.tokenize(i))
+  File "textsupport.pyx", line 96, in renpy.text.textsupport.tokenize (gen\renpy.text.textsupport.c:3268)
+Exception: Open text tag at end of string u"Well, I guess a circus with {b}synth-tech{/b] users wouldn't be all too normal anyway.".
+
+Windows-7-6.1.7601-SP1
+Ren'Py 6.16.5.525
+Harmonic Dissonance 0.0

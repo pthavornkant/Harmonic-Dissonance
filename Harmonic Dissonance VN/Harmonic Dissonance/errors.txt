@@ -1,0 +1,9 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/ch2.rpy", line 24: Line is indented, but the preceding hide statement statement does not expect a block. Please check this line's indentation.
+    show lawche_s at Position(xpos = 0.88, xanchor=0.5, ypos=0.61, yanchor=0.5)
+    ^
+
+Ren'Py Version: Ren'Py 6.16.5.525
